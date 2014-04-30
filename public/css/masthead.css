@@ -12,12 +12,12 @@ body {
 .sidebar {
   color: #fff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  background-color: #04a5e6;
-  background-image: -moz-linear-gradient(top, #AA0000, #04a5e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#AA0000), to(#04a5e6));
-  background-image: -webkit-linear-gradient(top, #AA0000, #04a5e6);
-  background-image: -o-linear-gradient(top, #AA0000, #04a5e6);
-  background-image: linear-gradient(to bottom, #AA0000, #04a5e6);
+  background-color: #003366;
+  background-image: -moz-linear-gradient(top, #AA0000, #003366);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#AA0000), to(#003366));
+  background-image: -webkit-linear-gradient(top, #AA0000, #003366);
+  background-image: -o-linear-gradient(top, #AA0000, #003366);
+  background-image: linear-gradient(to bottom, #AA0000, #003366);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff542687', endColorstr='#ff04a5e6', GradientType=0);
 }
