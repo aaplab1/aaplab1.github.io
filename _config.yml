@@ -6,24 +6,24 @@ pygments: true
 timezone: TIMEZONE
 
 # Dependencies
-markdown:         redcarpet
+markdown: redcarpet
 
 # Permalinks
-permalink:        pretty
+permalink: pretty
 
 # Setup
-tagline:          'Arizona Applied Phonetics Lab'
-description:      'Website of the Arizona Applied Phonetics laboratory at the University of Arizona.'
-url:              http://aaplab1.github.io
+tagline: 'Arizona Applied Phonetics Lab'
+description: 'Website of the Arizona Applied Phonetics laboratory at the University of Arizona.'
+url: http://aaplab1.github.io
 
 author:
-  name:           'Joseph V. Casillas'
-  url:            https://twitter.com/jvcasill
+  name: 'Joseph V. Casillas'
+  url: https://twitter.com/jvcasill
 
 paginate:         5
 
 # Custom vars
-version:          1.0.1
+version: 1.0.1
 
-github:			  aaplab1
-  repo:           https://github.com/aaplab1
+github:	aaplab1
+  repo: https://github.com/aaplab1
