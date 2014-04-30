@@ -1,21 +1,19 @@
 title: AAPL
 name: AAPL
 email: aaplab1@email.arizona.edu
-github: aaplab1
 twitter: jvcasill
 pygments: true
 timezone: TIMEZONE
 
 # Dependencies
 markdown:         redcarpet
-pygments:         true
 
 # Permalinks
 permalink:        pretty
 
 # Setup
 tagline:          'Arizona Applied Phonetics Lab'
-description:      'Website of the AAPL phonetics laboratory at the University of Arizona.'
+description:      'Website of the Arizona Applied Phonetics laboratory at the University of Arizona.'
 url:              http://aaplab1.github.io
 
 author:
@@ -27,5 +25,5 @@ paginate:         5
 # Custom vars
 version:          1.0.0
 
-github:
+github:			  aaplab1
   repo:           https://github.com/aaplab1
