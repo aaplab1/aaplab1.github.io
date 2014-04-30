@@ -31,14 +31,14 @@ body {
   color: #fff;
 }
 
-.masthead .header-divider:after {
+.masthead-inner .header-divider:after {
   width: 90%;
   background-color: #fff;
   opacity: 1;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-.masthead .list-unstyled {
+.masthead-inner .list-unstyled {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 85%;
@@ -48,12 +48,12 @@ body {
   margin-bottom: 0;
 }
 
-.masthead a {
+.masthead-inner a {
   font-weight: bold;
   color: #fff;
 }
 
-.masthead a:hover {
+.masthead-inner a:hover {
   text-decoration: none;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
@@ -117,7 +117,7 @@ body {
 
 
 
-.header-divider {
+.header-divider-inner {
   margin-top: 10px;
 }
 
