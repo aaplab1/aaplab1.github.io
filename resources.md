@@ -3,25 +3,25 @@ layout: default
 title: Resources
 ---
 
-# Resources
+## Resources
 
 Here you can find a collection of resources that we use or have used in the lab. Feel free to download adapt them to fit your needs.
 
-## LaTeX
+### LaTeX
 
-- [Poster template](resources/latex_poster.zip) (portrait)
+- [Poster template](latex_poster.zip) (portrait)
 
-## R
+### R
 
 - [R-snippets][R-snippets]
 
-## Psychopy
+### Psychopy
 
 - 2 AFC
 - Cross-modal priming
 - Delayed repition
 
-## Praat
+### Praat
 
 - Dealing with sound files
 - Normalize amplitude
