@@ -5,7 +5,7 @@ title: Resources
 
 ## Resources
 
-Here you can find a collection of resources that we use or have used in the lab. Feel free to download adapt them to fit your needs.
+Here you can find a collection of resources that we use or have used in the lab. Feel free to download and adapt them to fit your needs.
 
 ### LaTeX
 
