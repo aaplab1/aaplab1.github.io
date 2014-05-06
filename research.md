@@ -3,7 +3,10 @@ layout: default
 title: Research
 ---
 
-- [Lab calendar](calendar)
+### Current research
+
+- [Lab calendar](/calendar)
+
 ### Past research
 
 - Speech reduction across languages and dialects. NSF project #1022313 (Jan. 2011 - Dec. 2013; $227,001). N. Warner & M. Simonet (Tucson, Arizona, Co-PIs). Collaborators: B. Tucker (Edmonton, Canada), S. Bird (Victoria, Canada), M. Ernestus (Nijmegen, The Netherlands), J. Hay (Canterbury, New Zealand). Consultant: *S. Guion (Eugene, Oregon). Production and perception of spontaneous speech in English, Spanish, Dutch and Japanese by monolingual and bilingual speakers. (In progress.)
