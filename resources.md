@@ -11,9 +11,6 @@ Here you can find a collection of resources that we use or have used in the lab.
 
 - [Poster template](latex_poster.zip) (portrait)
 
-### R
-
-- [R-snippets][R-snippets]
 
 ### Psychopy
 
@@ -26,7 +23,9 @@ Here you can find a collection of resources that we use or have used in the lab.
 - Dealing with sound files
 - Normalize amplitude
 
+### R
 
+- [R-snippets][R-snippets]
 
 
 [R-snippets]: https://sublime.wbond.net/packages/R-snippets
