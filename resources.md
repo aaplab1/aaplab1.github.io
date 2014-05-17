@@ -9,7 +9,10 @@ Here you can find a collection of resources that we use or have used in the lab.
 
 ### LaTeX
 
-- [Poster template](latex_poster.zip) (portrait)
+- Poster templates (include UA and AAPL logos)
+	- [Portrait](latex_poster_portrait.zip)
+	- [Landscape](latex_poster_landscape.zip)
+
 
 
 ### Psychopy
