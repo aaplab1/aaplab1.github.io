@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  
+    <title>
+        AAPL
+      </title>
+  
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../libraries/frameworks/lanyon/public/css/poole.css">
+    <link rel="stylesheet" href="../../libraries/frameworks/lanyon/public/css/syntax.css">
+    <link rel="stylesheet" href="../../libraries/frameworks/lanyon/public/css/hyde.css">
+    <link rel="stylesheet" href="../../libraries/frameworks/lanyon/public/css/masthead.css">
+    <link rel="stylesheet" href="../../libraries/highlighters/highlight.js/css/sunburst.css">
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400"> -->
+    <!-- <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Gentium+Book+Basic|Lato:400' type='text/css'> -->
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Maven+Pro">
+  
+  
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="../../libraries/frameworks/lanyon/public/favicon_ipa.ico">
+  
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  
+    <!-- Jquery 
+    <script type="text/javascript" src="../../libraries/frameworks/lanyon/public/js/jquery-1.7.2.min.js"></script>
+  
+    Javascript 
+    <script type="text/javascript" src="../../libraries/frameworks/lanyon/public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../libraries/frameworks/lanyon/public/js/bootstrap-dropdown.js"></script> 
+    -->
+    
+  
+  
+  
+  </head>  <body class="theme-base-0d">
+
+
+    <div class="sidebar">
+      <div class="masthead-inner">
+        <div class="sidebar-about">
+          <h1 class="header-divider-inner">AAPL</h1>
+          <p class="lead">Arizona Applied Phonetics Lab</p>
+        </div>
+    
+    
+        <ul class="sidebar-nav header-divider-inner">
+          <li class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}">
+            <a href="/">Home</a>
+          </li>
+    
+          <a class="sidebar-nav-item" href="/members">
+      <i class='fa fa-cogs'> </i>  Members
+      </a>
+      <a class="sidebar-nav-item" href="/research">
+      <i class='fa fa-pencil-square'> </i>  Research
+      </a>
+      <a class="sidebar-nav-item" href="/equipment">
+      <i class='fa fa-archive'> </i>  Equipment
+      </a>
+      <a class="sidebar-nav-item" href="/resources">
+      <i class='fa fa-code'> </i>  Resources
+      </a>
+    </ul>
+    
+    
+        <div class="sidebar-item">
+          <p>
+          &copy; 2014. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>        <div class="container">
+          <h4>The LaTeX file</h4>
+<pre><code>\documentclass{article}
+\usepackage{tikz}
+\usepackage{tipa}
+
+\begin{document}
+
+\include{plot}
+
+\end{document}
+</code></pre>
+
+<h4>The R code</h4>
+
+<p>Comment here. </p>
+
+<pre><code>require(tikzDevice)
+options(tikzLatexPackages = c(getOption(&quot;tikzLatexPackages&quot;),
+                                  &quot;\\usepackage{tipa}&quot;))
+tikz( &#39;assets/plot.tex&#39;, standAlone=TRUE )
+library(stats)
+plot(cars)
+lines(lowess(cars))
+dev.off()
+</code></pre>
+
+<p>Comments here
+<img width="100%" src="assets/plot.pdf"></p>
+
+<p>Now let&#39;s do it with some IPA. Download this dataset and load it into R.</p>
+
+<pre><code>my_data &lt;- read.delim(&quot;assets/my_data.txt&quot;)
+</code></pre>
+
+<p>We will use ggplot2 for this graph.</p>
+
+<pre><code>library(ggplot2)
+</code></pre>
+
+<p>Now we will call tikz device.</p>
+
+<pre><code>require(tikzDevice)
+options(tikzLatexPackages = c(getOption(&quot;tikzLatexPackages&quot;), &quot;\\usepackage{tipa}&quot;))
+tikz(&#39;assets/ipa_plot.tex&#39;, standAlone=TRUE, width=5, height=5)
+my_data$group &lt;- factor(my_data$group, levels = c(&quot;EL&quot;, &quot;NE&quot;, &quot;LL&quot;))
+df&lt;-with(my_data, aggregate(fpro, list(group=group, fstim=fstim), mean))
+df$se&lt;-with(my_data, aggregate(fpro, list(group=group, fstim=fstim), function(x) sd(x)/sqrt(10)))[,3]
+gp &lt;- ggplot(df, aes(x=fstim, y=x, colour=group, ymin=x-se, ymax=x+se))
+gp + geom_line(aes(linetype=group), size = .4) + 
+    geom_point(aes(shape=group)) + 
+    geom_ribbon(alpha = 0.15, linetype=0) + 
+    ylim(0, 1) + 
+    scale_x_continuous(breaks=seq(0, 10, by=1)) +
+    labs(list(title = &quot;[\\textesh ip/\\textesh\\textsci p]&quot;, 
+            x = &quot;Stimuli&quot;, y = &quot;\\% [\\textesh\\textsci p]&quot;)) +
+    theme_bw() +
+    theme(legend.background = element_rect(colour = &#39;grey50&#39;, 
+        fill = &#39;grey97&#39;, size = .65, linetype=&#39;solid&#39;)) +
+    scale_linetype_discrete(&quot;Group&quot;) +
+    scale_shape_discrete(&quot;Group&quot;) +
+    scale_colour_discrete(&quot;Group&quot;)
+dev.off()
+</code></pre>
+
+<p>Comments here
+<img width="100%" src="assets/ipa_plot.pdf"></p>
+
+        </div>
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '53207fc1e32bb4498d004943');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>  </body>
+</html>

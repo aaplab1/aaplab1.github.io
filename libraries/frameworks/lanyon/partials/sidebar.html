@@ -1,0 +1,28 @@
+<div class="sidebar">
+  <div class="masthead-inner">
+    <div class="sidebar-about">
+      <h1 class="header-divider-inner">{{ site.title }}</h1>
+      <p class="lead">Arizona Applied Phonetics Lab</p>
+    </div>
+
+
+    <ul class="sidebar-nav header-divider-inner">
+      <li class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}">
+        <a href="/">Home</a>
+      </li>
+
+      {{# site.sidebar }}
+      <a class="sidebar-nav-item" href="{{ href }}">
+      <i class='fa fa-{{ icon }}'> </i>  {{ item }}
+      </a>
+      {{/ site.sidebar }}
+    </ul>
+
+
+    <div class="sidebar-item">
+      <p>
+      &copy; 2014. All rights reserved.
+      </p>
+    </div>
+  </div>
+</div>
