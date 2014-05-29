@@ -1,7 +1,9 @@
 ---
+title: "About"
 framework: lanyon
 onefile: False
 mode: selfcontained
+url: {lib: ../libraries}
 ---
 
 <section id="introduction">
