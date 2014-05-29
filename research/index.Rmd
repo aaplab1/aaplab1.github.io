@@ -9,7 +9,7 @@ url: {lib: ../libraries}
 
 ### Current research
 
-- [Lab calendar](research/calendar)
+- [Lab calendar](/research/calendar)
 
 ### Past research
 
