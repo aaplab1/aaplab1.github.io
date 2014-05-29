@@ -9,7 +9,7 @@ url: {lib: ../libraries}
 
 ### Current research
 
-- [Lab calendar](/calendar)
+- [Lab calendar](research/calendar)
 
 ### Past research
 
@@ -24,3 +24,14 @@ url: {lib: ../libraries}
 - Sound changes affecting voiced and voiceless stop consonants in (various dialects of) Spanish and Catalan. (J.I. Hualde, M. Nadeu [Illinois], P. Carrasco [Roanoke College], M. Simonet; articles published and others submitted. Finished.)
 - Prosodically conditioned gliding of postvocalic Galician nasals. (S. Colina and M. Simonet, article submitted. Finished)
 - The acquisition of Portuguese vowels by native speakers of English with and without Spanish language experience. (M. Díaz, dir. by M. Simonet and N. Warner; Ph.D. dissertation defended in June 2010. Finished.)
+
+
+<style>
+  .lead {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 200;
+    line-height: 1.4;
+    text-align: justify;
+  }
+</style>

@@ -37,3 +37,13 @@ Here you can find a collection of resources that we use or have used in the lab.
 
 [R-snippets]: https://sublime.wbond.net/packages/R-snippets
 
+
+<style>
+  .lead {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 200;
+    line-height: 1.4;
+    text-align: justify;
+  }
+</style>
