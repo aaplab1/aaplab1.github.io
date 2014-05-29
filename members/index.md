@@ -37,3 +37,13 @@ url: {lib: ../libraries}
 - Kaytee Cobb is one of the rarest breeds of human: a native Arizonan, born and raised. She grew up in Gilbert, Arizona, but then moved to the University of Arizona (Tucson) to pursue her Bachelor’s degree in Religious Studies, and a M.A. in Hispanic Linguistics (successfully defended in May 2009). Kaytee finished her M.A. with a thesis entitled "La pronunciación de las vocáles átonas del español," under the direction of professor Miquel Simonet. Kaytee’s research interests lie on the science side of Hispanic Linguistics, more specifically phonetics and phonology (and syntax). Kaytee moved to Oregon after completion of her M.A.
 
 - Daniela Teoc collaborated with the team while she was an undergraduate research assistant (Fall 2009) working towards Independent Study credit under professor Miquel Simonet. She conducted acoustic analyses of Spanish vowels produced by different groups of speakers. Daniela is from Romania and majored in Hispanic linguistics at the University of Arizona. She is currently (from Fall 2011) a graduate student in the M.A. program in Hispanic Linguistics at the University of Arizona.
+
+<style>
+  .lead {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 200;
+    line-height: 1.4;
+    text-align: justify;
+  }
+</style>
