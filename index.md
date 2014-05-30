@@ -4,14 +4,17 @@ onefile: False
 mode: selfcontained
 ---
 
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
 <div align="center">
   <img width="80%" src="libraries/frameworks/lanyon/assets/images/wordcloud.png">
 </div>
 
 
-<!-- ```{r, echo=FALSE, results='hide', cache=FALSE}
 
-``` -->
 
 
 <style>

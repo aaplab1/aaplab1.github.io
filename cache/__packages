@@ -1,0 +1,13 @@
+RColorBrewer
+Rcpp
+XML
+base
+datasets
+grDevices
+graphics
+knitr
+methods
+stats
+tm
+utils
+wordcloud
