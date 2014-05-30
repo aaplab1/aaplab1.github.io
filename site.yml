@@ -2,7 +2,8 @@ title: AAPL
 tagline: ""
 theme: "01"
 reverse: False
-description: >
+description: > 
+    Arizona Applied Phonetics Lab
 
 url: "http://aaplab1.github.io"
 author:
@@ -12,6 +13,7 @@ author:
 
 
 sidebar:
+  - {item: About, href: '/about', icon: 'cogs'}
   - {item: Members, href: '/members', icon: 'cogs'}
   - {item: Research, href: '/research', icon: 'pencil-square'}
   - {item: Equipment, href: '/equipment', icon: 'archive'}

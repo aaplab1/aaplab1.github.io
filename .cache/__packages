@@ -1,0 +1,7 @@
+base
+poirot
+RColorBrewer
+Rcpp
+tm
+wordcloud
+XML
