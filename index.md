@@ -9,9 +9,36 @@ mode: selfcontained
 <p></p>
 <p></p>
 <p></p>
+<p></p>
+<p></p>
+<p></p>
 <div align="center">
-  <img width="80%" src="libraries/frameworks/lanyon/assets/images/wordcloud.png">
+  <img width="90%" src="libraries/frameworks/lanyon/assets/images/tracks100a.png">
 </div>
+
+
+<!-- ```{r, echo=FALSE, results='hide', eval=FALSE, warning=FALSE}
+require(XML)
+require(tm)
+require(wordcloud)
+require(RColorBrewer)
+u = "http://cran.r-project.org/web/packages/available_packages_by_date.html"
+t = readHTMLTable(u)[[1]]
+ap.corpus <- Corpus(DataframeSource(data.frame(as.character(t[,3]))))
+ap.corpus <- tm_map(ap.corpus, removePunctuation)
+ap.corpus <- tm_map(ap.corpus, tolower)
+ap.corpus <- tm_map(ap.corpus, function(x) removeWords(x, stopwords("english")))
+ap.tdm <- TermDocumentMatrix(ap.corpus)
+ap.m <- as.matrix(ap.tdm)
+ap.v <- sort(rowSums(ap.m),decreasing=TRUE)
+ap.d <- data.frame(word = names(ap.v),freq=ap.v)
+table(ap.d$freq)
+pal2 <- brewer.pal(8,"RdBu")
+png("libraries/frameworks/lanyon/assets/images/wordcloud.png", width=500,height=500)
+wordcloud(ap.d$word,ap.d$freq, scale=c(8,.1),min.freq=4,
+max.words=Inf, random.order=FALSE, rot.per=.3, colors=pal2)
+dev.off()
+``` -->
 
 
 

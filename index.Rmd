@@ -9,12 +9,15 @@ mode: selfcontained
 <p></p>
 <p></p>
 <p></p>
+<p></p>
+<p></p>
+<p></p>
 <div align="center">
-  <img width="80%" src="libraries/frameworks/lanyon/assets/images/wordcloud.png">
+  <img width="90%" src="libraries/frameworks/lanyon/assets/images/tracks100a.png">
 </div>
 
 
-```{r, echo=FALSE, results='hide', eval=FALSE, warning=FALSE}
+<!-- ```{r, echo=FALSE, results='hide', eval=FALSE, warning=FALSE}
 require(XML)
 require(tm)
 require(wordcloud)
@@ -35,7 +38,10 @@ png("libraries/frameworks/lanyon/assets/images/wordcloud.png", width=500,height=
 wordcloud(ap.d$word,ap.d$freq, scale=c(8,.1),min.freq=4,
 max.words=Inf, random.order=FALSE, rot.per=.3, colors=pal2)
 dev.off()
-```
+``` -->
+
+
+
 
 
 <style>
