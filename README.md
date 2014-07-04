@@ -7,6 +7,6 @@ This is the github repository for the Arizona Applied Phonetics webpage.
 ## To do
 
 - [ ] update fonts
-- [?] members section
+- [x] members section
 - [ ] equipment
 - [ ] projects page
