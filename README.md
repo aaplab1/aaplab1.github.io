@@ -2,11 +2,11 @@
 
 This is the github repository for the Arizona Applied Phonetics webpage.
 
-![AAPL](assets/images/aapl_logo.jpg)
+![AAPL](libraries/frameworks/lanyon/assets/images/aapl_logo.jpg)
 
 ## To do
 
-- update fonts
-- members section
-- equipment
-- projects page
+- [ ] update fonts
+- [x] members section
+- [ ] equipment
+- [ ] projects page
