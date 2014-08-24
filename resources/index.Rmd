@@ -13,9 +13,11 @@ Here you can find a collection of resources that we use or have used in the lab.
 
 ### LaTeX
 
-- Poster templates (include UA and AAPL logos)
+- [Poster templates][Poster templates] (include UA and AAPL logos)
 	- [Portrait](latex_poster_portrait.zip)
 	- [Landscape](latex_poster_landscape.zip)
+- [Beamer presentation slides](UA_beamer_slides.zip) (include UA colors and logo)
+	- Instructions and other info available [here](https://github.com/jvcasill/UA_beamer_slides)
 
 
 
@@ -36,6 +38,7 @@ Here you can find a collection of resources that we use or have used in the lab.
 
 
 [R-snippets]: https://sublime.wbond.net/packages/R-snippets
+[Poster templates]: https://github.com/jvcasill/UA_poster_templates
 
 
 <style>
